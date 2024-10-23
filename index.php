@@ -27,7 +27,7 @@
             fetch('/calculo.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
-                body: JSON.stringfy({
+                body: JSON.stringify({
                     numero1: parseFloat(numero1),
                     numero2: parseFloat(numero2)                
                 })
