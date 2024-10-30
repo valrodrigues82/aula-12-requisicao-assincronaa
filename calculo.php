@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     // Verifica se o JSON contém os valores esperados
     if (isset($data->numero1) && isset($data->numero2)) {
         // Realiza a soma
-        $soma = $data->numero1 + $data->numero2;
+        $soma = $data->numero1 * $data->numero2;
         
         // Retorna a resposta em JSON
         echo json_encode(["soma" => $soma]);
